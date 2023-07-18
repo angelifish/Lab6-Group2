@@ -5,6 +5,7 @@
 
 
 def menu():
+    """Menu function for selecting an option"""
     selection = None
     in_menu = True
     while in_menu:
@@ -23,12 +24,14 @@ def menu():
 
 
 def encode(pw):
+    """Function for encoding password"""
     encoded_pw = ''
     for i in pw:
         encoded_pw += str(int(i) + 3)
     return encoded_pw
 
 
+"""Main body of program for encoding/decoding password"""
 encoding = True
 password = ''
 encoded_pw = ''
